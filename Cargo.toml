@@ -5,5 +5,12 @@ authors = ["Raynos <raynos2@gmail.com>"]
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+# TODO: add clippy
+# TODO: add slog
+# TODO: add http-service & http
+# TODO: add httparse
+# TODO: add runtime
+# TODO: add futures @ 0.3
+# TODO: add json
 
 [dependencies]
