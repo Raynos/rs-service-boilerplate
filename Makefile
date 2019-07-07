@@ -13,10 +13,17 @@
 # I configured nightly with
 #    `"rust-client.channel": "nightly-2019-07-03"`
 
+# For vendoring you will want to install cargo-vendor
+# `cargo install cargo-vendor`
+
 build:
 	cargo +nightly-2019-07-03 build
 	cargo +nightly-2019-07-03 clippy \
 		--all-targets --all-features -- -D warnings
+
+vendor:
+	mkdir .cargo
+	cargo vendor > .cargo/config
 
 test:
 	cargo +nightly-2019-07-03 test
