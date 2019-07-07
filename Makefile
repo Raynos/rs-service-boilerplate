@@ -8,6 +8,11 @@
 # so that you can run `cargo add modules@version`
 # `cargo install cargo-edit`
 
+# To use rust with your text editor I use VS code
+# I installed the rust (rls) extension
+# I configured nightly with
+#    `"rust-client.channel": "nightly-2019-07-03"`
+
 build:
 	cargo +nightly-2019-07-03 build
 	cargo +nightly-2019-07-03 clippy \
